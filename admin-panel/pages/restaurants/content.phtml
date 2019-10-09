@@ -1,0 +1,33 @@
+<?php
+$conn = mysqli_connect('localhost', 'root', '', 'fetishdatabase');
+if(isset($_POST['add'])){
+$restaurants_name = $_POST['restaurants_name'];
+print_r($restaurants_name);exit;
+$address = $_POST['address'];
+mysqli_query('$conn',"insert into restaurants (restaurants_name, address) values ('$restaurants_name','$address')");
+
+}
+?>
+
+
+<div class="container" style="margin-right: 20px;">
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+	<form method="post" action="content.phtml">
+	
+	<div class="form-group">
+	<label>Restaurant Name</label>
+	<input type="text" name="restaurants_name" class="form-control">
+	</div>
+
+	<div class="form-group">
+	<label>Address</label>
+	<input type="text" name="address" class="form-control">
+	</div>
+
+	<button type="submit" class="btn btn-primary" name="add" style="width:100%;letter-spacing:2px;">Add</button>
+		
+	</form>
+</div>
+</div>
+</div>

@@ -1,0 +1,4 @@
+[16-Sep-2019 06:34:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/pornpappa/public_html/meetmyfetish/themes/default/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pornpappa/public_html/meetmyfetish/themes/default/index.php on line 6
